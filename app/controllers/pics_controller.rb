@@ -10,11 +10,13 @@ class PicsController < ApplicationController
 
 	def new
 		#we'll be using this in our viewfile 
-		@pic = Pic.new
+		#@pic = Pic.new
+		#this means pics are being built from current user
+		@pic = current_user.pics.build
 	end
 
 	def create
-		@pic = Pic.new(pic_params)
+		@pic = current_user.pics.build(pic_params)
 
 		if @pic.save
 			redirect_to @pic, notice: "Yess! It was posted!"
