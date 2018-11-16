@@ -1,5 +1,9 @@
-%h1 Post Pic
+.col-md-8.col-md-offset-2
+	.row
+		.panel.panel-default
+			.panel-heading
+				%h1 Post Pic
+			.panel-body
+				= render 'form'
 
-= render 'form'
-
-= link_to "Back", root_path
+/ we're telling the application to use up the middle 8 columns and offset by 2 on each side and we will also put this in a row, we're going to have panel, panel default, and also a panel for the heading, and also a panel for the body

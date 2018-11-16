@@ -1,5 +1,10 @@
-%h1 Fix Pic!
+#edit_page.col-md-8.col-md-offset-2
+	.row
+		.panel.panel-default
+			.panel-heading
+				%h1 Edit Pic
+			.panel-body
+				= render 'form'
 
-= render 'form'
 
-= link_to "Cancel", pic_path
+/ we added #edit_page on the beginning so we can link up our customized css style on edit that can be seen on our application.css.scss
