@@ -9,9 +9,6 @@ class PicsController < ApplicationController
 	end
 
 	def new
-		#we'll be using this in our viewfile 
-		#@pic = Pic.new
-		#this means pics are being built from current user
 		@pic = current_user.pics.build
 	end
 
@@ -28,14 +25,14 @@ class PicsController < ApplicationController
 	def edit
 	end
 
-#update is to edit but create is to new-- responsible for the view files. create and update do not have view files. They are only responsible for changes that are made in the database. 
+
 	def update
 		if @pic.update(pic_params)
 			redirect_to @pic, notice: "Congrats! Pic was updated!"
 		else
 			render 'edit'
+		end
 	end
-end
 
 def destroy
 	@pic.destroy
