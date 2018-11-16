@@ -32,6 +32,9 @@ gem 'simple_form', '~> 4.0', '>= 4.0.1'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'devise', '~> 4.5'
 
+#this will be our gem for the pics
+gem 'paperclip', '~> 6.1'
+
 
 
 # Use ActiveStorage variant
