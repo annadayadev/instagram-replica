@@ -42,6 +42,9 @@ gem 'paperclip', '~> 6.1'
 #this will help us with the styling
 gem 'masonry-rails', '~> 0.2.4'
 
+#for the likes/dislikes
+gem 'acts_as_votable', '~> 0.12.0'
+
 
 
 # Use ActiveStorage variant

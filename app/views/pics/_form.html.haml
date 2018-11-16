@@ -1,7 +1,7 @@
 = simple_form_for @pic, html: { multipart: true } do |f|
 	- if @pic.errors.any?
 		#errors
-			%h2 		
+			%h2
 			= pluralize(@pic.errors.count, "error")
 			prevented this Pic from saving
 			%ul

@@ -1,13 +1,11 @@
+
 #edit_page.col-md-8.col-md-offset-2
 	.row
 		.panel.panel-default
 			.panel-heading
-				%h1 Edit Pic
+				%h1 Fix Pic
 			.panel-body
 				.current_image
 					%strong.center Right Now
 					= image_tag @pic.image.url(:medium)
 				= render 'form'
-
-
-/ we added #edit_page on the beginning so we can link up our customized css style on edit that can be seen on our application.css.scss
